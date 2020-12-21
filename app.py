@@ -33,7 +33,7 @@ nlp = load_model(spacy_model)
 
 try:
     negex = Negex(nlp, language="en_clinical",
-                  chunk_prefix=["no"])
+                  chunk_prefix=["no", "denies"])
     nlp.add_pipe(negex)
 except:
     st.write('')
