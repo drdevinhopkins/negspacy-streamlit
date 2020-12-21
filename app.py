@@ -36,7 +36,7 @@ try:
                   chunk_prefix=["no"])
     nlp.add_pipe(negex)
 except:
-    # st.write('negex already loaded')
+    st.write('')
 
 
 def add_umls_entities(doc):
